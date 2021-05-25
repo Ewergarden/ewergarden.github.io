@@ -1,0 +1,92 @@
+.profile {
+  .profile__header {
+    position: relative;
+    width: 100%;
+    .profile__header-bg {
+      background: url("https://image.freepik.com/free-vector/monochrome-green-realistic-dark-tropical-leaves-background_23-2148438934.jpg")  no-repeat center / contain;
+      background-size: 100%;
+      height: 150px;
+      width: 100%;
+    }
+    .profile__header-menu {
+      height: 150px;
+      border-bottom: 1px solid #E7EDF2;;
+    }
+    .profile__avatar {
+      border: 1px solid #E7EDF2;
+      box-shadow:  -5px -5px 5px -5px rgba(231, 237, 242, 0.6) inset;
+      border-radius: 7%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      left: 30px;
+      top: 70px;
+      img {
+        width: 100%;
+      }
+    }
+    .profile__name {
+       font-weight: 600;
+       font-size: 18px;
+       p {
+         text-align: center;
+       }
+    }
+    .profile__user {
+      left: 30px;
+      top: 70px;
+      position: absolute;
+    }
+  }
+  .profile__info {
+    display: flex;
+    .profile__info-photos {
+      width: 200px;
+      border-right: 1px solid #E7EDF2;
+      display: flex;
+      justify-content: center;
+      .profile__info-photo {
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        img {
+          padding-bottom: 10px;
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    .profile__info-me {
+      width: 530px;
+      border-right: 1px solid #E7EDF2;
+      .profile__info-status {
+        border-bottom: 2px solid #8224E3;
+        p {
+          margin-top: 30px;
+          font-weight: 600;
+          font-size: 17px;
+        }
+      }
+      .profile__info-container {
+        margin: 0 auto;
+        width: 380px;
+      }
+    }
+    .profile__info-post {
+      width: 200px;
+      margin: 0 auto;
+    }
+    .profile__button-edit {
+      display: block;
+      margin-top: 14px;
+      font-size: 20px;
+    }
+    .profile__data {
+      display: flex;
+      font-size: 15px;
+    }
+    .profile__contact-title {
+      opacity: 0.5;
+    }
+  }
+}

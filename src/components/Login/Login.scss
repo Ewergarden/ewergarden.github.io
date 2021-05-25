@@ -1,0 +1,14 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .login__from {
+      width: 300px;
+    div {
+      input {
+        width: 150px;
+      }
+    }
+  }
+}
