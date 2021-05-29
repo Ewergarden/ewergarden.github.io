@@ -7,7 +7,7 @@ import Form from "redux-form/lib/Form";
 import ProfileDataForm from "./ProfileDataForm";
 import ProfileReduxForm from "./ProfileDataForm";
 import {saveProfileSave} from "../../../redux/profile-reducer";
-import {AliwangwangOutlined, EditOutlined} from "@ant-design/icons"
+import {AliwangwangOutlined, EditOutlined, UploadOutlined} from "@ant-design/icons"
 import "./Profile.scss"
 import MyPostsContainer from "../Myposts/MyPostsContainer";
 
@@ -47,6 +47,7 @@ const Profileinfo = (props) => {
            }
        )
     }
+    const linkRef = React.createRef();
 
 
     return (
@@ -62,11 +63,12 @@ const Profileinfo = (props) => {
                 <div className="profile__user" >
                     <div className="profile__avatar">
                         <img src={props.profile.photos.large || userPhoto}/>
-                        {props.isOwner && <input type={'file'} onChange={mainPhotoSelect}/> }
+                        {props.isOwner && <i><UploadOutlined style={{fontSize:"18px"}} onClick={() => linkRef.current.click()} /></i>}
                     </div>
                     <div className="profile__name">
                         <p>{props.profile.fullName}</p>
                     </div>
+                    <input ref={linkRef} type={'file'}  onChange={mainPhotoSelect}/>
                 </div>
 
             </div>

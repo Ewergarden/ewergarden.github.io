@@ -5,6 +5,7 @@ import {maxLenghtCreator, requiredFild} from "../../Utils/Validators/Validator";
 import {connect} from "react-redux";
 import {login} from "../../redux/auth-reducer";
 import {Redirect} from "react-router-dom";
+import {MessageOutlined, PicRightOutlined, UsergroupAddOutlined} from "@ant-design/icons"
 import "./Login.scss"
 
 
@@ -15,28 +16,71 @@ const maxLenght10 = maxLenghtCreator(10);
 
 const LoginForm = ({handleSubmit,error,captchaUrl}) => {
     return ( <div className="login">
-        <div className="login__form">
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <Field placeholder={'email'} name={'email'}
-                        //validate={[requiredFild,maxLenght10]}
-                           component={Input}/>
+        <div className="login__block">
+            <div className="login__block-left">
+                <h3>
+                    Join to social network
+                </h3>
+                <p>
+                    Please enter you login and password
+                </p>
+                <div className="login__block-about">
+                    <div className="login__block-ico">
+                        <i>
+                            <UsergroupAddOutlined  style={{fontSize :"30px",color:"#fff"}}/>
+                        </i>
+                    </div>
+                    <div className="login__block-description">
+                        <p>Add user</p>
+                    </div>
                 </div>
-                <div>
-                    <Field placeholder={'Password'} name={'password'} component={Input}/>
+                <div className="login__block-about">
+                    <div className="login__block-ico">
+                        <i>
+                            <PicRightOutlined style={{fontSize :"30px",color:"#fff"}} />
+                        </i>
+                    </div>
+                    <div className="login__block-description">
+                        <p>Create your Posts</p>
+                    </div>
                 </div>
-                <div>
-                    <Field type={'checkbox'} name={'rememberMe'} component={Input}/>
+                <div className="login__block-about">
+                    <div className="login__block-ico">
+                        <i>
+                            <MessageOutlined style={{fontSize :"30px",color:"#fff"}} />
+                        </i>
+                    </div>
+                    <div className="login__block-description">
+                        <p>Send message</p>
+                    </div>
                 </div>
-                { error && <div>}>
-                    {error}
-                </div>}
-                {captchaUrl && <img src={captchaUrl}/>}
-                {captchaUrl && <Field placeholder={'Symbols'} name={'captcha'} component={Input}/> }
-                <div>
-                    <button> Login</button>
+            </div>
+            <div className="login__block-right">
+                <div className="login__form">
+                    <form onSubmit={handleSubmit}>
+                        <div className="login__form-input">
+                            <Field placeholder={'Email'} name={'email'}
+                                //validate={[requiredFild,maxLenght10]}
+                                   component={Input}/>
+                        </div>
+                        <div className="login__form-input">
+                            <Field placeholder={'Password'} name={'password'} component={Input}/>
+                        </div>
+                        <div className="login__form-checkbox">
+                            <Field type={'checkbox'} name={'rememberMe'} component={Input}/>
+                            <p>Remember</p>
+                        </div>
+                        { error && <div className="login__form-error">
+                            {error}
+                        </div>}
+                        {captchaUrl && <img src={captchaUrl}/>}
+                        {captchaUrl && <Field placeholder={'Symbols'} name={'captcha'} component={Input}/> }
+                        <div className="login__form-btn">
+                            <button> Login</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
     )

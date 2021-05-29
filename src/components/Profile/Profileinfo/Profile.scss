@@ -24,18 +24,28 @@
       img {
         width: 100%;
       }
+      i {
+        position: absolute;
+        z-index: 30;
+        padding-top: 4px;
+        opacity: 0.5;
+      }
     }
     .profile__name {
        font-weight: 600;
        font-size: 18px;
        p {
          text-align: center;
+         margin-left: 7px;
        }
     }
     .profile__user {
       left: 30px;
       top: 70px;
       position: absolute;
+      input {
+        display: none;
+      }
     }
   }
   .profile__info {

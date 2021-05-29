@@ -1,13 +1,94 @@
+
 .login {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  .login__from {
-      width: 300px;
-    div {
-      input {
-        width: 150px;
+  padding-top: 200px;
+  width: 100%;
+  .login__block {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+
+    .login__block-left {
+      padding: 40px 30px;
+      background-color: rgba(134, 44, 228, 0.6);
+      h3 {
+        padding-top: 30px;
+        color: white;
+        z-index: 2;
+      }
+      p {
+        color: white;
+        opacity: 0.5;
+      }
+      .login__block-about {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        .login__block-ico {
+          i {}
+        }
+        .login__block-description {
+          p {opacity: 1;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .login__block-right {
+      padding: 40px 55px;
+      box-shadow:  7px 5px 10px rgba(0,0,0,0.2);
+      .login__form {
+        padding-top: 30px;
+        .login__form-error {
+          color: red;
+          justify-content: center;
+          display: flex;
+          padding-bottom: 5px;
+        }
+        form {
+          .login__form-input {
+            input {
+              width: 170px;
+              border-radius: 50px;
+              height: 30px;
+              margin-bottom: 10px;
+              border: none;
+              background-color: #F7F7F7;
+              padding: 5px;
+            }
+            input:active, input:hover, input:focus {
+              outline: 0!important;
+              outline-offset: 0;
+            }
+          }
+          .login__form-checkbox {
+            input {
+              margin-top: 6px;
+              margin-right: 5px;
+              border-color: rgba(134, 44, 228, 0.6);
+              outline: none;
+            }
+            display: flex;
+          }
+          .login__form-btn {
+            display: flex;
+            justify-content: center;
+            button {
+              width: 170px;
+              height: 35px;
+              border: none;
+              color: white;
+              background-color: rgba(134, 44, 228, 0.6) ;
+              border-radius: 50px;
+              outline: none;
+            }
+            button:hover {
+              background-color: #8327E3;
+              transition: 1s;
+            }
+          }
+        }
       }
     }
   }
