@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Ewergarden/react-app.git/static/css/main.e74383e5.chunk.css",
+    "main.js": "/Ewergarden/react-app.git/static/js/main.2bc5921c.chunk.js",
+    "main.js.map": "/Ewergarden/react-app.git/static/js/main.2bc5921c.chunk.js.map",
+    "runtime-main.js": "/Ewergarden/react-app.git/static/js/runtime-main.46d75f9d.js",
+    "runtime-main.js.map": "/Ewergarden/react-app.git/static/js/runtime-main.46d75f9d.js.map",
+    "static/css/2.8a94f959.chunk.css": "/Ewergarden/react-app.git/static/css/2.8a94f959.chunk.css",
+    "static/js/2.499c1d43.chunk.js": "/Ewergarden/react-app.git/static/js/2.499c1d43.chunk.js",
+    "static/js/2.499c1d43.chunk.js.map": "/Ewergarden/react-app.git/static/js/2.499c1d43.chunk.js.map",
+    "static/css/3.aa25cddf.chunk.css": "/Ewergarden/react-app.git/static/css/3.aa25cddf.chunk.css",
+    "static/js/3.8aae905c.chunk.js": "/Ewergarden/react-app.git/static/js/3.8aae905c.chunk.js",
+    "static/js/3.8aae905c.chunk.js.map": "/Ewergarden/react-app.git/static/js/3.8aae905c.chunk.js.map",
+    "static/js/4.c13b535a.chunk.js": "/Ewergarden/react-app.git/static/js/4.c13b535a.chunk.js",
+    "static/js/4.c13b535a.chunk.js.map": "/Ewergarden/react-app.git/static/js/4.c13b535a.chunk.js.map",
+    "index.html": "/Ewergarden/react-app.git/index.html",
+    "static/css/2.8a94f959.chunk.css.map": "/Ewergarden/react-app.git/static/css/2.8a94f959.chunk.css.map",
+    "static/css/3.aa25cddf.chunk.css.map": "/Ewergarden/react-app.git/static/css/3.aa25cddf.chunk.css.map",
+    "static/css/main.e74383e5.chunk.css.map": "/Ewergarden/react-app.git/static/css/main.e74383e5.chunk.css.map",
+    "static/js/2.499c1d43.chunk.js.LICENSE.txt": "/Ewergarden/react-app.git/static/js/2.499c1d43.chunk.js.LICENSE.txt",
+    "static/media/292-2924858_user-icon-business-man-flat-png-transparent-png.32962620.jpg": "/Ewergarden/react-app.git/static/media/292-2924858_user-icon-business-man-flat-png-transparent-png.32962620.jpg",
+    "static/media/avatar.be063ef3.png": "/Ewergarden/react-app.git/static/media/avatar.be063ef3.png",
+    "static/media/gif.efd50a90.gif": "/Ewergarden/react-app.git/static/media/gif.efd50a90.gif",
+    "static/media/logo.575ee520.png": "/Ewergarden/react-app.git/static/media/logo.575ee520.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46d75f9d.js",
+    "static/css/2.8a94f959.chunk.css",
+    "static/js/2.499c1d43.chunk.js",
+    "static/css/main.e74383e5.chunk.css",
+    "static/js/main.2bc5921c.chunk.js"
+  ]
+}
